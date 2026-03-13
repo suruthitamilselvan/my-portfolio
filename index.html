@@ -12,14 +12,12 @@
     background: #0a0a0a;
     color: #f0f0f0;
     scroll-behavior: smooth;
-  }
-
-  /* NAVBAR */
+  } 
   nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(10,10,10,0.95);
+    background: rgba(8, 8, 8, 0.95);
     padding: 18px 60px;
     display: flex;
     justify-content: space-between;
@@ -31,8 +29,6 @@
   nav ul { list-style: none; display: flex; gap: 32px; }
   nav ul a { color: #aaa; text-decoration: none; font-size: 14px; transition: color 0.2s; }
   nav ul a:hover { color: #a78bfa; }
-
-  /* HERO */
   #hero {
     min-height: 100vh;
     display: flex;
@@ -42,6 +38,7 @@
     max-width: 1100px;
     margin: 0 auto;
   }
+
   .hero-tag {
     display: inline-block;
     background: #1e1b4b;
@@ -72,7 +69,6 @@
   .btn-outline { background: transparent; border: 1.5px solid #a78bfa; color: #a78bfa; }
   .btn-outline:hover { background: #a78bfa; color: #fff; }
 
-  /* SECTIONS */
   section { padding: 90px 60px; max-width: 1100px; margin: 0 auto; }
   .section-header { margin-bottom: 48px; }
   .section-header h2 { font-size: 36px; font-weight: 700; margin-bottom: 10px; }
@@ -80,7 +76,6 @@
   .section-header p { color: #555; font-size: 15px; margin-top: 8px; }
   .underline { width: 52px; height: 4px; background: #a78bfa; border-radius: 2px; margin-top: 10px; }
 
-  /* ABOUT */
   .about-grid { display: grid; grid-template-columns: auto 1fr; gap: 60px; align-items: center; }
   .about-avatar {
     width: 260px; height: 260px; border-radius: 50%;
@@ -94,7 +89,7 @@
   .info-item .label { font-size: 11px; color: #444; text-transform: uppercase; letter-spacing: 1px; }
   .info-item .value { font-size: 15px; color: #ddd; font-weight: 500; margin-top: 2px; }
 
-  /* SKILLS */
+  
   .skills-section { background: #0d0d0d; padding: 90px 0; }
   .skills-inner { max-width: 1100px; margin: 0 auto; padding: 0 60px; }
   .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; }
@@ -109,7 +104,7 @@
   .skill-bar { height: 6px; border-radius: 4px; background: #a78bfa; width: 0; transition: width 1.5s ease; }
   .skill-percent { font-size: 12px; color: #555; margin-top: 6px; }
 
-  /* PROJECTS */
+  
   .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
   .project-card {
     background: #111; border: 1px solid #1f1f1f; border-radius: 14px;
@@ -128,7 +123,7 @@
   .project-tags { display: flex; gap: 8px; flex-wrap: wrap; }
   .tag-badge { font-size: 11px; background: #1e1b4b; color: #a78bfa; padding: 4px 12px; border-radius: 20px; }
 
-  /* CONTACT */
+  
   .contact-section { background: #0d0d0d; padding: 90px 0; }
   .contact-inner { max-width: 1100px; margin: 0 auto; padding: 0 60px; }
   .contact-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 60px; align-items: start; }
@@ -151,15 +146,13 @@
   .contact-form input:focus, .contact-form textarea:focus { border-color: #a78bfa; }
   .contact-form textarea { height: 130px; resize: vertical; }
 
-  /* FOOTER */
   footer { text-align: center; padding: 28px; color: #333; font-size: 13px; border-top: 1px solid #111; }
   footer span { color: #a78bfa; }
 
-  /* ANIMATIONS */
+  
   .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
   .fade-in.visible { opacity: 1; transform: translateY(0); }
 
-  /* RESPONSIVE */
   @media (max-width: 768px) {
     nav { padding: 16px 20px; }
     nav ul { gap: 14px; }
@@ -177,7 +170,6 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
 <nav>
   <div class="logo">&lt; Suruthi /&gt;</div>
   <ul>
@@ -188,8 +180,6 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
-
-<!-- HERO -->
 <section id="hero">
   <div class="hero-tag">👋 Welcome to my Portfolio</div>
   <h1>Hi, I'm <span>Suruthi</span><br/>Web Developer</h1>
@@ -199,8 +189,6 @@
     <a href="#contact" class="btn btn-outline">Contact Me</a>
   </div>
 </section>
-
-<!-- ABOUT -->
 <section id="about">
   <div class="section-header fade-in">
     <h2>About <span>Me</span></h2>
@@ -233,7 +221,6 @@
   </div>
 </section>
 
-<!-- SKILLS -->
 <div class="skills-section" id="skills">
   <div class="skills-inner">
     <div class="section-header fade-in">
@@ -282,7 +269,6 @@
   </div>
 </div>
 
-<!-- PROJECTS -->
 <section id="projects">
   <div class="section-header fade-in">
     <h2>My <span>Projects</span></h2>
@@ -323,7 +309,7 @@
   </div>
 </section>
 
-<!-- CONTACT -->
+
 <div class="contact-section" id="contact">
   <div class="contact-inner">
     <div class="section-header fade-in">
@@ -361,14 +347,14 @@
   </div>
 </div>
 
-<!-- FOOTER -->
 <footer>
   <p>Designed & Built with ❤️ by <span>Suruthi</span> &mdash; 2026</p>
 </footer>
 
+
+
 <!-- JAVASCRIPT -->
 <script>
-  // Fade-in on scroll
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -378,7 +364,6 @@
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-  // Animate skill bars when visible
   const skillObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -391,7 +376,6 @@
   const skillsGrid = document.getElementById('skills-grid');
   if (skillsGrid) skillObserver.observe(skillsGrid);
 
-  // Highlight active nav link
   window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section, .skills-section, .contact-section');
     const navLinks = document.querySelectorAll('nav ul a');
